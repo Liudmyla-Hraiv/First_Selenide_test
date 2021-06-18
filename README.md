@@ -1,2 +1,2 @@
 # First_Selenide_test
-Example of a simple selenide test
+Example of a simple selenide test with Gradle
