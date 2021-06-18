@@ -14,8 +14,7 @@ public class Citrus {
     private SelenideElement buyButton1 = $(byXpath("(//i[@class='icon-new-citrus-cart el-tooltip item'])[1]"));
     private SelenideElement openItem = $(byXpath("(//*[@class='card-product-link'])[8]"));
     private SelenideElement buyButton2 = $(byXpath("(//button[@class='btn orange buy-section__btn buy-section__buy-btn limited full'])[1]"));
-    private SelenideElement item1 = $(byXpath("(//*[@class='ctrs-basket-product'])[1]"));
-    private SelenideElement item2 = $(byXpath("(//*[@class='ctrs-basket-product'])[2]"));
+   
 
     @Test
     public void CitrusTest(){
@@ -25,7 +24,6 @@ public class Citrus {
         icon.click();
         openItem.click();
         buyButton2.click();
-        item1.shouldBe(Condition.visible);
-        item2.shouldBe(Condition.visible);
+        
     }
 }
